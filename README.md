@@ -40,3 +40,8 @@ Research on the prediction of visual saliency in egocentric vision.
 <center>
 <img src="https://github.com/imatge-upc/egocentric-saliency/blob/master/doc/2014-simedio-poster.png">
 </center>
+
+## Project progress
+
+### Tobii eye-tracker glasses
+* [Video of the calibration process of the Tobii glasses](https://www.youtube.com/watch?v=8QLuRJAgQIM).
