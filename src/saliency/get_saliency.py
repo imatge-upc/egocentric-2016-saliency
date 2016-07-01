@@ -26,7 +26,7 @@ modelfile = '/imatge/mcherto/examples/model.caffemodel'
 
 def get_saliency_for_salnet(image_url,sal_url):
     salnet = SalNet(specfile,modelfile)
-    arr_files = glob.glob(image_url+"*.jpg")
+    arr_files = glob.glob(image_url+"*.png")
     for i in range(len(arr_files)):  
         url_image = arr_files[i]
         img = io.imread(url_image)       
@@ -70,7 +70,7 @@ def to_rgb(im):
     return np.repeat(im.astype(np.float32), 3, 2)
 
 def get_saliency_for_juntingnet(image_url,sal_url):
-    arr_files = glob.glob(image_url+"*.jpg")
+    arr_files = glob.glob(image_url+"*.png")
     for i in range(len(arr_files)):  
         url_image = arr_files[i]
         image = io.imread(url_image)       
@@ -95,8 +95,8 @@ juntingnet = pickle.load(f)
 f.close()
 
 def main():
-    get_saliency_for_salnet('/imatge/mcherto/ejemplo','/imatge/mcherto/ejemplo')
-    get_saliency_for_juntingnet('/imatge/mcherto/ejemplo/','/imatge/mcherto/ejemplo')
+    get_saliency_for_salnet('/imatge/mcherto/input_directory','/imatge/mcherto/output_directory')
+    get_saliency_for_juntingnet('/imatge/mcherto/input_directory/','/imatge/mcherto/output_directory')
 
 if __name__ == '__main__':
     main()
