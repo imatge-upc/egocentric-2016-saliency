@@ -7,7 +7,7 @@ Research on the prediction of visual saliency in egocentric vision.
 
 <table border=0>
 <tr>
-<td><img src="https://github.com/imatge-upc/egocentric-saliency/blob/master/monica.jpg" width=100>
+<td><img src="egocentric-2016-saliency/monica.jpg" width=100>
 <td><img src="https://github.com/imatge-upc/egocentric-saliency/blob/master/xavi.jpg" width=100>
 <td><img src="https://github.com/imatge-upc/egocentric-saliency/blob/master/cathal.jpg" width=100>
 <tr>
